@@ -33,8 +33,8 @@ def predict():
         results.render()  # updates results.imgs with boxes and labels
         for img in results.imgs:
             img_base64 = Image.fromarray(img)
-            img_base64.save("static/image0.jpg", format="JPEG")
-        return redirect("static/image0.jpg")
+            img_base64.save("static/eyecloud.jpg", format="JPEG")
+        return redirect("static/eyecloud.jpg")
 
     return render_template("index.html")
 
